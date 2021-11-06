@@ -37,9 +37,11 @@ Recuerda que cada response debe ir con un código de status adecuado y que todos
 ## Robots list
 
 - RECIBE una array con una lista de robots y los RENDERIZA.
+- RECIBE el componente Robot y lo renderiza.
 - ENVIA una funció al componente Robot.
 
 ## Robot
 
 - RECIBE una función y la executa.
 - Envia la información del componente.
+- Contiene dos botones que ejecutan la funcion recibida.
