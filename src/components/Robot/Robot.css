@@ -1,0 +1,13 @@
+.image-container {
+  max-height: 300px;
+  max-width: 100%;
+  height: 100%;
+  width: 400px;
+  overflow-x: hidden;
+}
+
+.image-robot {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
