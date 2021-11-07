@@ -2,7 +2,8 @@ import axios from "axios";
 import { loadRobotsAction, createRobotAction } from "../actions/actionCreator";
 
 const urlApi = "https://robots-decolorblau.herokuapp.com/robots";
-const urlApiCreate = urlApi + "/create?token=patata";
+const urlApiCreate =
+  urlApi + "/create?token=" + process.env.REACT_APP_ROBOT_TOKEN;
 
 export const loadRobotsThunk = () => {
   return async (dispatch) => {

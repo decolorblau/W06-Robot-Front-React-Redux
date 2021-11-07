@@ -29,7 +29,7 @@ const FormRobot = () => {
       imageUrl:
         robot.imageUrl !== ""
           ? robot.imageUrl
-          : "https://robots.ieee.org/robots/alberthubo/Interactive%201/Media%20Player/SD-Q3-M360/alberthubo-int1-01.jpg",
+          : "https://s1.1zoom.me/big3/675/346648-admin.jpg",
       features: {
         speed: robot.speed,
         resistance: robot.resistance,
@@ -75,6 +75,7 @@ const FormRobot = () => {
           placeholder="url"
           value={robot.imageUrl}
           onChange={changeRobot}
+          required
         />
 
         <div className="mt-5">
