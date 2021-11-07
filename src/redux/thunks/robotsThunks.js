@@ -2,6 +2,7 @@ import axios from "axios";
 import { loadRobotsAction, createRobotAction } from "../actions/actionCreator";
 
 const urlApi = "https://robots-decolorblau.herokuapp.com/robots";
+const urlApiCreate = urlApi + "/create?token=patata";
 
 export const loadRobotsThunk = () => {
   return async (dispatch) => {
@@ -11,7 +12,7 @@ export const loadRobotsThunk = () => {
 };
 export const createRobotThunk = (robot) => {
   return async (dispatch) => {
-    const { data: newRobot } = await axios.post(urlApi, robot);
+    const { data: newRobot } = await axios.post(urlApiCreate, robot);
     dispatch(createRobotAction(newRobot));
   };
 };
