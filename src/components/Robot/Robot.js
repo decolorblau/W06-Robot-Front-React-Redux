@@ -1,7 +1,15 @@
+import "./Robot.css";
+
 const Robot = ({ robot }) => {
   return (
     <div className="card">
-      <img src={robot.imageUrl} className="card-img-top" alt="robot" />
+      <div className="card-img-top image-container">
+        <img
+          src={robot.imageUrl}
+          className="card-img-top image-robot"
+          alt="robot"
+        />
+      </div>
       <div className="card-body">
         <h3 className="card-title">{robot.name}</h3>
         <p className="card-text">Speed: {robot.features.speed}</p>
