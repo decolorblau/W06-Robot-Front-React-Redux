@@ -1,7 +1,7 @@
 import axios from "axios";
 import { loadRobotsAction } from "../actions/actionCreator";
 
-const urlApi = process.env.REACT_APP_API_URL;
+const urlApi = "https://robots-decolorblau.herokuapp.com/robots";
 
 export const loadRobotsThunk = () => {
   return async (dispatch) => {
