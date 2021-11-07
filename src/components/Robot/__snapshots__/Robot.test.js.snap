@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given a Task component When it receives and object with task then it should render a snapshot of task 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="robot"
+    className="card-img-top"
+    src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hobbyconsolas.com%2Fnoticias%2Fsorprendente-nueva-patente-sony-robot-nos-acompana-jugar-ps5-623609&psig=AOvVaw2Q1mBWnM8eXuUvp8J6IhSV&ust=1636372563694000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIDEg_-YhvQCFQAAAAAdAAAAABAD"
+  />
+  <div
+    className="card-body"
+  >
+    <h3
+      className="card-title"
+    >
+      robot
+    </h3>
+    <p
+      className="card-text"
+    >
+      Speed: 
+      9
+    </p>
+    <p
+      className="card-text"
+    >
+      Resistance: 
+      4
+    </p>
+    <p
+      className="card-text"
+    >
+      Year of Creation: 
+      2020
+    </p>
+    <button
+      className="btn btn-outline-primary"
+    >
+      Update
+    </button>
+    <button
+      className="btn btn-outline-danger m-1"
+    >
+      Delete
+    </button>
+  </div>
+</div>
+`;
