@@ -1,6 +1,6 @@
 const Robot = ({ robot }) => {
   return (
-    <div className="card" style="width: 18rem;">
+    <div className="card">
       <img src={robot.imageUrl} className="card-img-top" alt="robot" />
       <div className="card-body">
         <h3 className="card-title">{robot.name}</h3>

@@ -17,7 +17,7 @@ const RobotsList = () => {
       <h2>List of Robots</h2>
       <ul className="list-unstyled">
         {robots.map((robot) => (
-          <li key={robot.id}>
+          <li key={robot._id}>
             <Robot robot={robot} />
           </li>
         ))}
