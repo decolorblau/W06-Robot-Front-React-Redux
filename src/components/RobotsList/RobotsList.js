@@ -1,16 +1,13 @@
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
-import { loadRobotsThunk } from "../../redux/thunks/robotsThunks";
+import useRobots from "../../hooks/useRobots";
 import Robot from "../Robot/Robot";
 
 const RobotsList = () => {
-  const robots = useSelector(({ robots }) => robots);
-  const dispatch = useDispatch();
+  const { robots, loadRobots } = useRobots();
 
   useEffect(() => {
-    dispatch(loadRobotsThunk());
-  }, [dispatch]);
+    loadRobots();
+  }, [loadRobots]);
 
   return (
     <>
