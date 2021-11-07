@@ -15,9 +15,9 @@ const RobotsList = () => {
   return (
     <>
       <h2>List of Robots</h2>
-      <ul className="list-unstyled">
+      <ul className="list-unstyled row">
         {robots.map((robot) => (
-          <li key={robot._id}>
+          <li className="col-4" key={robot._id}>
             <Robot robot={robot} />
           </li>
         ))}

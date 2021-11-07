@@ -9,8 +9,8 @@ const Robot = ({ robot }) => {
         <p className="card-text">
           Year of Creation: {robot.features.yearCreation}
         </p>
-        <button className="btn btn-primary">Update</button>
-        <button className="btn btn-primary">Delete</button>
+        <button className="btn btn-outline-primary">Update</button>
+        <button className="btn btn-outline-danger m-1">Delete</button>
       </div>
     </div>
   );
