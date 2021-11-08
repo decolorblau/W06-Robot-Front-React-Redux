@@ -53,7 +53,7 @@ const FormRobot = () => {
     <>
       <h2 className="mt-4">CREATE YOUR ROBOT</h2>
       <form onSubmit={sendForm} autoComplete="off" noValidate>
-        <label htmlFor="name" className="form-label">
+        <label htmlFor="name" className="form-label mt-2">
           NAME
         </label>
         <input
@@ -65,7 +65,7 @@ const FormRobot = () => {
           onChange={changeRobot}
           required
         />
-        <label htmlFor="imageUrl" className="form-label">
+        <label htmlFor="imageUrl" className="form-label mt-3">
           IMAGE:
         </label>
         <input

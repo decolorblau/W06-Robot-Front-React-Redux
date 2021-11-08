@@ -6,8 +6,9 @@ const userLocal = process.env.REACT_APP_LOCALSTORAGE;
 
 const urlApi = "https://robots-decolorblau.herokuapp.com/";
 
-export const loginUserThunk = (user) => async (dispatch) => {
+export const userLoginThunk = (user) => async (dispatch) => {
   const response = await axios.post(urlApi + "users/login", user);
+
   if (response.status === 200) {
     const token = response.data.token;
     const user = jwtDecode(token);
