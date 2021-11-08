@@ -2,7 +2,7 @@ import actionTypes from "../actions/actionTypes";
 
 const userReducer = (
   user = {
-    isAuthentidated: false,
+    isAuthenticated: false,
     user: {},
   },
   action
@@ -12,13 +12,13 @@ const userReducer = (
   switch (action.type) {
     case actionTypes.loginUser:
       newUser = {
-        isAuthentidated: true,
+        isAuthenticated: true,
         user: action.user,
       };
       break;
     case actionTypes.logoutUser:
       newUser = {
-        isAuthentidated: false,
+        isAuthenticated: false,
         user: {},
       };
       break;
