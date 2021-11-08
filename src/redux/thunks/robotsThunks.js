@@ -7,7 +7,12 @@ const urlApiCreate =
 
 export const loadRobotsThunk = () => {
   return async (dispatch) => {
-    const { data: robots } = await axios.get(urlApi);
+    const { token } = JSON.parse(
+      localStorage.getItem(process.env.REACT_APP_LOCALSTORAGE)
+    );
+    const { data: robots } = await axios.get(urlApi + "/", {
+      headers: { Authorization: "Bearer " + token },
+    });
     dispatch(loadRobotsAction(robots));
   };
 };
