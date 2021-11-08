@@ -60,7 +60,7 @@ const FormRobot = () => {
           type="text"
           className="form-control"
           id="name"
-          placeholder="Name ex: R2-D2"
+          placeholder="Name"
           value={robot.name}
           onChange={changeRobot}
           required

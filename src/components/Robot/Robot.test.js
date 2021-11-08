@@ -3,9 +3,9 @@ import Robot from "./Robot";
 import ReactTestRenderer from "react-test-renderer";
 import configureStore from "../../redux/store";
 
-describe("Given a Task component", () => {
-  describe("When it receives and object with task", () => {
-    test("then it should render a snapshot of task", () => {
+describe("Given a robot component", () => {
+  describe("When it receives and object with robot", () => {
+    test("then it should render a snapshot of robot", () => {
       const robot = {
         id: 1,
         name: "robot",
