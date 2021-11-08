@@ -15,8 +15,8 @@ const RobotsList = () => {
       <ul className="list-unstyled row">
         {robots.map((robot) => (
           <li
-            className="col-lg-4 col-md-6 col-sm-12 mb-2 d-flex align-items-stretch"
             key={robot._id}
+            className="col-lg-4 col-md-6 col-sm-12 mb-2 d-flex align-items-stretch"
           >
             <Robot robot={robot} />
           </li>
