@@ -26,7 +26,7 @@ describe("Given the component FormRobot", () => {
       );
 
       const name = screen.getByLabelText("NAME");
-      const yearCreation = screen.getByPlaceholderText("year");
+      const yearCreation = screen.getByLabelText("Year Creation:");
       const button = screen.getByRole("button", { name: "CREATE ROBOT" });
 
       userEvent.type(name, "hola");
