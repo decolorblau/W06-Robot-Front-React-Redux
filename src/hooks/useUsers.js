@@ -1,16 +1,21 @@
 import { useDispatch, useSelector } from "react-redux";
 import { userThunks } from "../redux/thunks/userThunks";
+import { userLogoutAction } from "../redux/actions/actionCreator";
 
 const useUsers = () => {
-  const users = useSelector(({ users }) => users);
+  const user = useSelector(({ user }) => user);
   const dispatch = useDispatch();
 
   const login = () => {
     dispatch(userThunks());
   };
+  const logout = () => {
+    dispatch(userLogoutAction());
+  };
   return {
-    users,
+    user,
     login,
+    logout,
   };
 };
 
